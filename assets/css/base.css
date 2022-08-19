@@ -1,0 +1,100 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.active {
+    display: block !important;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: transparent;
+}
+
+img {
+    width: 100%;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.center-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-wrap {
+    flex-wrap: nowrap !important;
+}
+
+
+/* Responsive */
+.grid {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid__full-width {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.grid__column-2 {
+    width: 16.6667%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.grid__column-2-4 {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 20%;
+}
+
+.grid__column-3 {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 25%;
+}
+
+.grid__column-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 50%;
+}
+

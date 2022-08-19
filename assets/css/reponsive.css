@@ -1,0 +1,338 @@
+@media only screen and  (max-width: 450px) {
+    .header,
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar__mobile-menu {
+        font-size: 32px;
+        color: #959595;
+    }
+    
+    .navbar__logo {
+        width: 100px;
+        margin-top: 5px;
+        margin-left: -36px;
+    }
+    
+    .navbar__menu {
+        display: none;
+        top: 100%;
+        position: absolute;
+        left: -32px;
+        background-color: white;
+        width: 0%;
+        padding-top: 26px;
+        height: 1000px;
+        box-shadow: 0 5px 16px rgb(0, 0, 0, 40%);
+        animation: slideInMenu ease-in-out .5s forwards;
+    }
+    
+    @keyframes slideInMenu{
+        from {
+            opacity: 0;
+        } to {
+            opacity: 1;
+            width: 80%;
+        }
+    }
+    
+    @keyframes slideOutMenu{
+        from {
+            width: 80%;
+            opacity: 1;
+        } to {
+            width: 0;
+            opacity: 0;
+        }
+    }
+    
+    .navbar__menu > ul {
+        color: black;
+        flex-direction: column;
+        margin: 0px 26px;
+    }
+    
+    .navbar__menu > ul > li {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    /* .navbar__menu > ul > li::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%
+    } */
+    
+    .navbar__menu > ul > li > a {
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .submenu-product {
+        display: block;
+        position: unset;
+        padding: 20px 0 10px 8px;
+    }
+    
+    .submenu-product li {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .submenu-product a {
+        color: black;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+    
+    .submenu-product a > i {
+        padding-right: 12px;
+        font-size: 24px;
+    }
+    
+    .submenu__right-btn {
+        margin-left: auto;
+    }
+    
+    .submenu__right-btn i{
+        font-size: 20px;
+    }
+    
+    .navbar__menu-moblie-footer {
+        background-color: black;
+        margin: 30px 26px;
+        font-size: 16px;
+        padding: 12px 0;
+        color: #fff;
+        border-radius: 4px;
+        display: block;
+        text-align: center;
+    }
+    
+    .navbar__list {
+        margin: 0;
+    }
+    
+    .navbar__item {
+        margin: 0 4px;
+    }
+    
+    .navbar__item-cart__popUp {
+        width: 360px;
+        top: 47px;
+        right: 0px;
+    }
+    
+    .navbar__item-cart__popUp::after {
+        top: -12px;
+        right: 10px;
+        border-width: 6px 8px;
+    }
+
+    .navbar__item-cart__popUp p,
+    .navbar__item-cart__popUp button {
+        font-size: 15px;
+    }
+
+    .navbar__item-cart__popUp p i {
+        margin-right: 8px;
+    }
+
+    .navbar__item-button {
+        width: 34px;
+        height: 34px;
+        font-size: 13px;
+    }
+    .slider {
+        margin-top: 60px;
+    }
+
+    .slider__angle {
+        font-size: 40px;
+        top: calc(50% - 20px);
+    }
+    
+
+    .headline__title {
+        font-size: 25px;
+    }
+
+    .headline button {
+        padding: 10px 6px;
+        color: #000;
+        margin: 0;
+        background-color: white;
+        border-radius: 4px;
+        font-size: 13px;
+        pointer-events: none;
+    }
+
+    .headline::before {
+        content: unset;
+    }
+
+    .product__container {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .product__btn {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 101;
+    }
+
+    .featured .product__angle  {
+        top: calc(75% - 20px);
+    }
+
+    .product__angle  {
+        position: absolute;
+        font-size: 36px;
+        top: calc(50% - 20px);
+        opacity: 0.6;
+        z-index: 100;
+        display: none;
+    }
+
+    .product__angle-left {
+        left: -6px;
+    }
+
+    .product__angle-right {
+        right: -6px;
+    }
+
+    .product__discount {
+        padding: 2px 22px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 12px;
+        width: fit-content;
+    }
+
+    .product__gift {
+        font-size: 14px;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+    }
+
+    .product__feature-container .product__feature-detail > .product__name {
+        padding: 12px 8px;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .product__feature-container .product__feature-detail > .product__price {
+        margin: 12px 8px;
+        font-size: 16px;
+        text-transform: none;
+    }
+
+
+    .product__detail {
+        height: 300px;
+    }
+
+    .product__list {
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .banner {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .banner__container {
+        flex-wrap: nowrap;
+        overflow: hidden;
+        width: calc(200% + 60px);
+    }
+
+    .banner__item {
+        width: 100%;
+        padding: 0;
+    }
+
+    .news__container {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .new__list {
+        overflow: hidden;
+    }
+
+    .new__detail-button button {
+        pointer-events: none;   
+    }
+
+    .new__angle {
+        position: absolute;
+        font-size: 40px;
+        top: calc(50% - 20px);
+        opacity: 0.8;
+        z-index: 100;
+        display: none;
+    }
+
+    .new__angle-left {
+        left: -6px;
+    }
+
+    .new__angle-right {
+        right: -6px;
+    }
+
+    .new__btn {
+        background: none;
+        outline: none;
+        border: none;
+    }
+
+    .footer {
+        background-color: #191919;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .footer__logo {
+        max-width: 200px;
+    }
+
+    .footer__content {
+        margin: 40px 0 0;
+        flex-direction: column;
+    }
+
+    .footer__title {
+        padding-bottom: 24px;
+    }
+
+    .footer__content ul li {
+        margin: 16px 0;
+        pointer-events: none;
+    }
+
+    .footer__link {
+        color: #b1b1b1;
+        font-size: 16px;
+    }
+    .footer__license {
+        margin: 0;
+        width: 50%;
+    }
+
+}
