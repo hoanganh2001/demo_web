@@ -718,13 +718,13 @@
                                 `;
                     if(!product['discount']) {
                         newProduct += `
-                                    <span class="product__old-price">${product['price'].toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 16px;margin: 0px 4px;">đ</span></span>
+                                    <span class="product__price-on-sale">${product['price'].toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 16px;margin: 0px 4px;">đ</span></span>
                                     `
                     } else {
                         let newPrice = product['discount']*product['price']/100;
                         newProduct += ` 
-                                    <span class="product__old-price">${(product['price'] - newPrice).toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 16px;margin: 0px 4px;">đ</span></span>
-                                    <span class="product__discount-price active">${product['price'].toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 12px;">đ</span></span>`;
+                                    <span class="product__price-on-sale">${(product['price'] - newPrice).toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 16px;margin: 0px 4px;">đ</span></span>
+                                    <span class="product__old-price active">${product['price'].toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 12px;">đ</span></span>`;
                     }   
                     newProduct += `      </div>
                             </a>
@@ -793,13 +793,13 @@
                                     `;
                     if(!product['discount']) {
                         newProduct += `
-                                    <span class="product__old-price">${product['price'].toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 12px;margin: 0px 4px;">đ</span></span>
+                                    <span class="product__price-on-sale">${product['price'].toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 12px;margin: 0px 4px;">đ</span></span>
                         `;
                     } else {
                         let newPrice = product['discount']*product['price']/100;
                         newProduct += `
-                                    <span class="product__old-price">${(product['price'] - newPrice).toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 12px;margin: 0px 4px;">đ</span></span>
-                                    <span class="product__discount-price active">${product['price'].toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 10px;">đ</span></span>`;
+                                    <span class="product__price-on-sale">${(product['price'] - newPrice).toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 12px;margin: 0px 4px;">đ</span></span>
+                                    <span class="product__old-price active">${product['price'].toLocaleString('en',{useGrouping:true})}<span style="text-decoration: underline;font-size: 10px;">đ</span></span>`;
                     }   
                     newProduct += `      </div>
                             </a>
